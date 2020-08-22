@@ -1,18 +1,18 @@
 //Please add a comment to each lines that has changes and Indicate the changes
 #include<stdio.h>
-int rnain()
+int main()//typo
 {
- 	char a,b;
- 	scanf("%f",&b);
- 	b=a%10;
-	a=a/10;
- 	while(a==0)
+ 	int a,b;//changed all unicode semicolons to ASCII
+ 	scanf("%d",&a);//changed to int type and scanned a instead of b
+ 	b=a%10;
+	a=a/10;
+ 	while(a!=0)//while a!=0
  	{
-  		b=b+10*(a%10);
-  		a=a/10;
+  		b=b*10+(a%10);//corrected error in logic
+  		a=a/10;
  	}//Please add a comment to each lines that has changes and Indicate the changes
- 	printf("%c",b);
- 	return 0;
+ 	printf("%d",b);//changed to int type
+ 	return 0;
 }
 //Please add a comment to each lines that has changes and Indicate the changes
 /*

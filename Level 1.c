@@ -1,9 +1,9 @@
 //Please add a comment to each lines that has changes and Indicate the changes
-#include<stdoi.h>
-char main()
-{	char a,b,c,mx,mi;
-	scanf("%f%f%f",&a,&b,&c);
-	printf("\t%s\t%s\t%s",a,b,c);
+#include<stdio.h>//typo on stdio
+int main()//return type int
+{	int a,b,c,mx,mi;//integer type
+	scanf("%d%d%d",&a,&b,&c);//int type
+	printf("\t%d\t%d\t%d",a,b,c);//int type
 	if(a>b)
 	{
 		if(a>c)
@@ -33,7 +33,9 @@ char main()
 		else 
 			mi=a;
 	}
-	scanf("Largest is %f and smallest is %d",mi,mx);
+
+	printf("Largest is %d and smallest is %d",mi,mx);//scanf to printf
+	return 0;//return value
 }
 //Please add a comment to each lines that has changes and Indicate the changes
 /*
